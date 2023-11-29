@@ -5,13 +5,13 @@ public class Task5 {
     public static String repFirstChar(String s){
         char c = s.charAt(0);
 
-        if(String.valueOf(s.toUpperCase().charAt(0)).equals(String.valueOf(c))){
+        if(c>=65 && c<=90){
             return "upper";
         }
-        else if(String.valueOf(s.toLowerCase().charAt(0)).equals(String.valueOf(c))){
+        else if(c>=97 && c<=122){
             return "lower";
         }
-        else if(c=='0'||c=='1'||c=='2'||c=='3'||c=='4'||c=='5'||c=='6'||c=='7'||c=='8'||c=='9'){
+        else if(c>=48 && c<=57){
             return "digit";
         }
         else {
